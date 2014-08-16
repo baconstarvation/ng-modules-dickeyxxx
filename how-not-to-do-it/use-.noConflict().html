@@ -1,0 +1,10 @@
+<script>
+var $ = 'myobject that jquery will conflict with'
+</script>
+<script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script>
+// $ is jQuery since we added that script tag
+var jq = jQuery.noConflict();
+// $ is back to 'myobject that jquery will conflict with'
+// jq is now JQuery
+</script>
